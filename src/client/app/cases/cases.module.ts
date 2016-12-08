@@ -6,6 +6,9 @@ import { CasesRoutingModule } from './cases-routing.module';
 @NgModule({
   imports: [CommonModule, CasesRoutingModule],
   declarations: [CasesComponent],
-  exports: [CasesComponent]
+  exports: [CasesComponent],
+  //bootstrap: [ CasesComponent ]
 })
+
+
 export class CasesModule { }
