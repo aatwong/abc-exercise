@@ -39,4 +39,3 @@ export class NameListService {
     return Observable.throw(errMsg);
   }
 }
-
