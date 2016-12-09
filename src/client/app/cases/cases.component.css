@@ -10,6 +10,14 @@ body {
   background-color: purple;
 }
 
+.btn-primary {
+  background-color: #8000ff;
+}
+
+.btn-danger {
+  background-color: #001a4d;
+}
+
 h4 {
   color: white;
 }

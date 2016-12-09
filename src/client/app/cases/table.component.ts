@@ -21,13 +21,15 @@ export class TableComponent implements OnInit {
   //cases = CASES.filter(c => c.service === "obamacare");
   public cases: Case[];
 
-  constructor(private _caseService: CaseService) {}
+  constructor(private _caseService: CaseService) {}  //"dependency injection"
 
   getCases() {
-    this._caseService.getCases().then((cases: CASES[]) => this.cases = cases);
+    this._caseService.getCases().then((cases: Case[]) => {
+      this.cases = cases
+    });
   }
 
-  ngOnInit(): any {
+  ngOnInit(): any {  //when component is done loading
     this.getCases();
   }
 }
