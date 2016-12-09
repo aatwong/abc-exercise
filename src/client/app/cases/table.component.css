@@ -1,0 +1,11 @@
+table {
+    border-collapse: collapse;
+}
+
+tbody {
+  background-color: white;
+}
+
+.my-table {
+  margin-top: 1em;
+}

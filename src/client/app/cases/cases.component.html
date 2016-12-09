@@ -1,11 +1,13 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 
 <body>
-  <h1>Cases</h1>
+  <div class="container">
+    <h1>Cases</h1>
+  </div>
 
   <div class="container">
     <div class="row">
-      <div class="col-sm-6">
+      <div class="col-sm-5">
         <div class="card card-block sub-title">
           <h5>Completed Cases over the past 7 days</h5>
         </div>
@@ -13,29 +15,23 @@
     </div>
   </div>
 
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-2 panel categories">
-        <h4>Benefits Verification: #</h4>
-      </div>
-      <div class="col-sm-2 panel categories">
-        <h4>Prior Authorization: #</h4>
-      </div>
-      <div class="col-sm-2 panel categories">
-        <h4>Prescription Referral: #</h4>
-      </div>
-      <div class="col-sm-2 panel categories">
-        <h4>PAP: #</h4>
-      </div>
-      <div class="col-sm-2 panel categories">
-        <h4>Copay: #</h4>
-      </div>
-    </div>
+  <body>
+  <div class="container wrap">
+  		<div class="myrow-wrap">
+  				<div class="myrow">
+  						<div class="box">Benefits Verification: 14</div>
+  						<div class="box">Prior Authorization: 14</div>
+  						<div class="box">Prescription Referral: 14</div>
+  						<div class="box">PAP: 14</div>
+              <div class="box">CoPay: 14</div>
+  				</div>
+  		</div>
   </div>
+  </body>
 
   <div class="container">
     <div class="row">
-      <div class="col-sm-6">
+      <div class="col-sm-5">
         <div class="card card-block sub-title">
           <h5>Current Cases</h5>
         </div>
@@ -45,14 +41,26 @@
 
   <div class="container">
     <div class="row">
-      <button type="button" class="btn btn-success">Benefits Verification</button>
-      <button type="button" class="btn btn-warning">Prior Authorization</button>
-      <button type="button" class="btn btn-primary">CoPay</button>
-      <button type="button" class="btn btn-info">PAP</button>
-      <button type="button" class="btn btn-danger">Prescription Referral</button>
+      <div class="col-sm-3">
+        <div class="card card-block sub-title">
+          <h5>Filter Options</h5>
+        </div>
+      </div>
     </div>
   </div>
 
+  <div class="container panel panel-default">
+    <div class="panel-body">
+      <h6 class="col-sm-2">Service Types:</h6>
+      <button type="button" class="btn btn-success col-sm-2">Benefits Verification</button>
+      <button type="button" class="btn btn-warning col-sm-2">Prior Authorization</button>
+      <button type="button" class="btn btn-primary col-sm-2">CoPay</button>
+      <button type="button" class="btn btn-info col-sm-2">PAP</button>
+      <button type="button" class="btn btn-danger col-sm-2">Prescription Referral</button>
+    </div>
+  </div>
 
-  <table-component></table-component>
+  <div class="container">
+    <table-component></table-component>
+  </div>
 </body>

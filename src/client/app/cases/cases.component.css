@@ -4,10 +4,15 @@ body {
 
 .sub-title {
   background-color: white;
+  font-size: 14;
 }
 
-.categories {
+/*.categories {
   background-color: purple;
+}*/
+
+.btn {
+  font-size: 10px
 }
 
 .btn-primary {
@@ -20,4 +25,36 @@ body {
 
 h4 {
   color: white;
+}
+
+.wrap {
+	background: #cfefff;
+	margin:auto;
+}
+.myrow-wrap {margin:0 -30px;}
+.myrow {
+	display:table;
+	table-layout:fixed;
+	width:100%;
+	border-spacing:15px;
+	height:100px;
+}
+.box {
+	display:table-cell;
+	vertical-align: middle;
+	background: purple;
+	color: #fff;
+  text-align: center;
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+@media screen and (max-width:760px){
+	.myrow-wrap {margin:0}
+	.myrow {display:block;border-spacing:0;height:auto;}
+	.box {display:block;margin:0 0 15px;min-height:300px;}
 }
