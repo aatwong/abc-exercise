@@ -1,6 +1,6 @@
 export class Case {
   patientId: number;
-  dob: string;  //date type?
+  dob: string;  
   name: string;
   serviceId: number;
   service: string;
